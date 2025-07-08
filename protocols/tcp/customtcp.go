@@ -11,6 +11,7 @@ import (
 
 	"github.com/mushorg/glutton/connection"
 	"github.com/mushorg/glutton/protocols/interfaces"
+	"github.com/mushorg/glutton/custom"
 )
 
 
@@ -24,7 +25,7 @@ func CustomTcpHandle(ctx context.Context, conn net.Conn, md connection.Metadata,
 
 	// Log connection data
 	log.SetOutput(os.Stdout)
-	log.Printf("TCP connection from %-15s to port %s\n", source_ip, strconv.FormatInt(int64(destination_port), 10))
+	log.Printf("TCP connection from %-15s to port %-5s %s\n", source_ip, strconv.FormatInt(int64(destination_port), 10), custom.PortDescription(destination_port))
 
 	return conn.Close()
 }

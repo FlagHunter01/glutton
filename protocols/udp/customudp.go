@@ -11,6 +11,7 @@ import (
 
 	"github.com/mushorg/glutton/connection"
 	"github.com/mushorg/glutton/protocols/interfaces"
+	"github.com/mushorg/glutton/custom"
 )
 
 func CustomUdpHandle(ctx context.Context, srcAddr, dstAddr *net.UDPAddr, data []byte, md connection.Metadata, logger interfaces.Logger, h interfaces.Honeypot) error {
@@ -23,7 +24,7 @@ func CustomUdpHandle(ctx context.Context, srcAddr, dstAddr *net.UDPAddr, data []
 
 	// Log connection data
 	log.SetOutput(os.Stdout)
-	log.Printf("UDP connection from %-15s to port %s\n", source_ip, strconv.FormatInt(int64(destination_port), 10))
+	log.Printf("UDP connection from %-15s to port %-5s %s\n", source_ip, strconv.FormatInt(int64(destination_port), 10), custom.PortDescription(destination_port))
 
 	return nil
 }
