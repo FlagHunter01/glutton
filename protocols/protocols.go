@@ -21,6 +21,10 @@ type UDPHandlerFunc func(ctx context.Context, srcAddr, dstAddr *net.UDPAddr, dat
 // MapUDPProtocolHandlers map protocol handlers to corresponding protocol
 func MapUDPProtocolHandlers(log interfaces.Logger, h interfaces.Honeypot) map[string]UDPHandlerFunc {
 	protocolHandlers := map[string]UDPHandlerFunc{}
+	// [CUSTOM] Custom UDP handler
+	protocolHandlers["CustomUdpHandle"] = func(ctx context.Context, srcAddr, dstAddr *net.UDPAddr, data []byte, md connection.Metadata) error {
+		return udp.CustomUdpHandle(ctx, srcAddr, dstAddr, data, md, log, h)
+	}
 	protocolHandlers["udp"] = func(ctx context.Context, srcAddr, dstAddr *net.UDPAddr, data []byte, md connection.Metadata) error {
 		return udp.HandleUDP(ctx, srcAddr, dstAddr, data, md, log, h)
 	}
@@ -30,6 +34,10 @@ func MapUDPProtocolHandlers(log interfaces.Logger, h interfaces.Honeypot) map[st
 // MapTCPProtocolHandlers map protocol handlers to corresponding protocol
 func MapTCPProtocolHandlers(log interfaces.Logger, h interfaces.Honeypot) map[string]TCPHandlerFunc {
 	protocolHandlers := map[string]TCPHandlerFunc{}
+	// [CUSTOM] Custom TCP handler
+	protocolHandlers["CustomTcpHandle"] = func(ctx context.Context, conn net.Conn, md connection.Metadata) error {
+		return tcp.CustomTcpHandle(ctx, conn, md, log, h)
+	}
 	protocolHandlers["smtp"] = func(ctx context.Context, conn net.Conn, md connection.Metadata) error {
 		return tcp.HandleSMTP(ctx, conn, md, log, h)
 	}
