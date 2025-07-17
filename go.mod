@@ -18,6 +18,7 @@ require (
 )
 
 require (
+	github.com/coreos/go-systemd/v22 v22.5.0 // direct
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect

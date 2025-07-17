@@ -13,6 +13,7 @@ import (
 
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
+	"github.com/coreos/go-systemd/v22/daemon"
 )
 
 var (
@@ -71,6 +72,8 @@ func main() {
 		g.Shutdown()
 	}
 
+	// [CUSTOM] send sd_notify READY signal
+	daemon.SdNotify(false, "READY=1")
 	// capture and handle signals
 	sig := make(chan os.Signal, 1)
 	signal.Notify(sig, os.Interrupt, syscall.SIGTERM)
