@@ -41,10 +41,6 @@ func ReadWhitelist(path string) (map[string]bool, error) {
 		// Add line to map
 		whitelist[line] = true
 	}
-	for key := range whitelist {
-		log.SetOutput(os.Stderr)
-		log.Printf("> %s", key)
-	}
 	return whitelist, scanner.Err()
 }
 
