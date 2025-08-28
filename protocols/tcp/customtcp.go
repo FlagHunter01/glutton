@@ -80,7 +80,7 @@ func CustomTcpHandle(ctx context.Context, conn net.Conn, md connection.Metadata,
 		// Set output to stdout
 		log.SetOutput(os.Stdout)
 		// Write log
-		log.Printf("TCP connection from %-15s to port %-5s %s\n", source_ip, destination_port_string, custom.PortDescription(destination_port))
+		log.Printf("TCP connection from %-40s to port %-5s %s\n", custom.ResolveIp(source_ip), destination_port_string, custom.PortDescription(destination_port))
 	}
 	// Log error
 	if whitelist_error != nil {
