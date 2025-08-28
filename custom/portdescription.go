@@ -448,7 +448,7 @@ func PortDescription(port uint16) string {
     case 270:
         description = "Q-mode encapsulation for GIST messages"
     case 271:
-        description = "IETF Network Endpoint Assessment (NEA) Posture Transport Protocol over TLS (PT-TLS)"
+        description = "IETF PT-TLS"
     case 280:
         description = "http-mgmt"
     case 281:
@@ -836,9 +836,9 @@ func PortDescription(port uint16) string {
     case 511:
         description = "PassGo"
     case 512:
-        description = "remote process execution; authentication performed using passwords and UNIX login names"
+        description = "remote process execution"
     case 513:
-        description = "remote login a la telnet; automatic authentication performed based on priviledged port numbers and distributed data bases which identify authentication domains"
+        description = "remote login a la telnet"
     case 514:
         description = "cmd like exec"
     case 515:
@@ -1102,7 +1102,7 @@ func PortDescription(port uint16) string {
     case 648:
         description = "Registry Registrar Protocol (RRP)"
     case 649:
-        description = "Cadview-3d - streaming 3d models over the internet"
+        description = "Cadview-3d"
     case 650:
         description = "OBEX"
     case 651:
@@ -2746,7 +2746,7 @@ func PortDescription(port uint16) string {
     case 1732:
         description = "proxim"
     case 1733:
-        description = "SIMS - SIIPAT Protocol for Alarm Transmission"
+        description = "SIMS - SIIPAT"
     case 1734:
         description = "Camber Corporation License Management"
     case 1735:
@@ -3288,7 +3288,7 @@ func PortDescription(port uint16) string {
     case 2006:
         description = "raid"
     case 2010:
-        description = "IANA assigned this well-formed service name as a replacement for pipe_server."
+        description = "pipe_server."
     case 2011:
         description = "raid"
     case 2029:
@@ -4796,7 +4796,7 @@ func PortDescription(port uint16) string {
     case 2803:
         description = "btprjctrl"
     case 2804:
-        description = "March Networks Digital Video Recorders and Enterprise Service Manager products"
+        description = "March Networks Digital Video Recorders"
     case 2805:
         description = "WTA WSP-S"
     case 2806:
@@ -5422,7 +5422,7 @@ func PortDescription(port uint16) string {
     case 3120:
         description = "D2000 Webserver Port"
     case 3121:
-        description = "The pacemaker remote (pcmk-remote) service extends high availability functionality outside of the Linux cluster into remote nodes."
+        description = "pacemaker remote"
     case 3122:
         description = "MTI VTR Emulator port"
     case 3123:
@@ -7600,7 +7600,7 @@ func PortDescription(port uint16) string {
     case 4330:
         description = "DEY Storage Administration REST API"
     case 4331:
-        description = "ktickets REST API for event management and ticketing systems (embedded POS devices)"
+        description = "ktickets REST API for event management and ticketing"
     case 4332:
         description = "Getty Images FOCUS service"
     case 4333:
@@ -7870,9 +7870,9 @@ func PortDescription(port uint16) string {
     case 4569:
         description = "Inter-Asterisk eXchange"
     case 4570:
-        description = "Service to distribute and update within a site deployment information for Oracle Communications Suite"
+        description = "Oracle Communications Suite update"
     case 4573:
-        description = "A port for communication between a server and client for a custom backup system"
+        description = "Custom backup system"
     case 4590:
         description = "RID over HTTP/TLS"
     case 4591:
@@ -7908,9 +7908,9 @@ func PortDescription(port uint16) string {
     case 4606:
         description = "Secure ID to IP registration and lookup"
     case 4621:
-        description = "Bidirectional single port remote radio VOIP and Control stream"
+        description = "Single port remote radio VOIP stream"
     case 4646:
-        description = "Distributed Denial-of-Service Open Threat Signaling (DOTS) Signal Channel Protocol. The service name is used to construct the SRV service names _dots-signal._udp and _dots-signal._tcp for discovering DOTS servers used to establish DOTS signal channel."
+        description = "DOTS Signal Channel Protocol"
     case 4658:
         description = "PlayStation2 App Port"
     case 4659:
@@ -7988,7 +7988,7 @@ func PortDescription(port uint16) string {
     case 4702:
         description = "NetXMS Server Synchronization"
     case 4703:
-        description = "Network Performance Quality Evaluation System Test Service"
+        description = "Network Performance Quality Evaluation"
     case 4704:
         description = "Assuria Insider"
     case 4711:
@@ -8064,7 +8064,7 @@ func PortDescription(port uint16) string {
     case 4789:
         description = "Virtual eXtensible Local Area Network (VXLAN)"
     case 4790:
-        description = "Generic Protocol Extension for Virtual eXtensible Local Area Network (VXLAN)"
+        description = "VXLAN"
     case 4791:
         description = "IP Routable RocE"
     case 4792:
@@ -8354,7 +8354,7 @@ func PortDescription(port uint16) string {
     case 5086:
         description = "Aprigo Collection Service"
     case 5087:
-        description = "BIOTIC - Binary Internet of Things Interoperable Communication"
+        description = "BIOTIC"
     case 5090:
         description = "Candidate AR"
     case 5091:
@@ -8453,10 +8453,6 @@ func PortDescription(port uint16) string {
         description = "AmericaOnline3"
     case 5194:
         description = "CipherPoint Config Service"
-    case 5195:
-        description = "The protocol is used by a license server and client programs to control use of program licenses that float to networked machines"
-    case 5196:
-        description = "The protocol is used by two programs that exchange table data used in the AMPL modeling language"
     case 5197:
         description = "Tunstall Lone worker device interface"
     case 5200:
@@ -8732,9 +8728,9 @@ func PortDescription(port uint16) string {
     case 5465:
         description = "NETOPS-BROKER"
     case 5470:
-        description = "The Apsolab company's data collection protocol (native api)"
+        description = "The Apsolab company's data collection protocol"
     case 5471:
-        description = "The Apsolab company's secure data collection protocol (native api)"
+        description = "The Apsolab company's secure data collection protocol"
     case 5472:
         description = "The Apsolab company's dynamic tag protocol"
     case 5473:
@@ -8805,8 +8801,6 @@ func PortDescription(port uint16) string {
         description = "BeInSync-Web"
     case 5585:
         description = "BeInSync-sync"
-    case 5586:
-        description = "Planning to send mobile terminated SMS to the specific port so that the SMS is not visible to the client"
     case 5597:
         description = "inin secure messaging"
     case 5598:
@@ -9034,9 +9028,9 @@ func PortDescription(port uint16) string {
     case 5911:
         description = "Air Traffic Services applications using ACARS"
     case 5912:
-        description = "Aeronautical Information Service/Meteorological applications using ACARS"
+        description = "Applications using ACARS"
     case 5913:
-        description = "Airline operational communications applications using ACARS"
+        description = "Applications using ACARS"
     case 5914:
         description = "Security for Internet Protocol Suite"
     case 5963:
@@ -9100,7 +9094,7 @@ func PortDescription(port uint16) string {
     case 6081:
         description = "Generic Network Virtualization Encapsulation (Geneve)"
     case 6082:
-        description = "APCO Project 25 Common Air Interface - UDP encapsulation"
+        description = "APCO Project 25 Common Air Interface"
     case 6083:
         description = "telecomsoftware miami broadcast"
     case 6084:
@@ -9326,7 +9320,7 @@ func PortDescription(port uint16) string {
     case 6456:
         description = "SKIP Certificate Send"
     case 6464:
-        description = "Port assignment for medical device communication in accordance to IEEE 11073-20701"
+        description = "Medical devices"
     case 6471:
         description = "LVision License Manager"
     case 6480:
@@ -9512,7 +9506,7 @@ func PortDescription(port uint16) string {
     case 6778:
         description = "netTsunami p2p storage system"
     case 6784:
-        description = "Bidirectional Forwarding Detection (BFD) on Link Aggregation Group (LAG) Interfaces"
+        description = "Bidirectional Forwarding Detection on Link Aggregation Group"
     case 6785:
         description = "DGPF Individual Exchange"
     case 6786:
@@ -10034,7 +10028,7 @@ func PortDescription(port uint16) string {
     case 8003:
         description = "Mulberry Connect Reporting Service"
     case 8004:
-        description = "Opensource Evolv Enterprise Platform P2P Network Node Connection Protocol"
+        description = "Opensource Evolv Enterprise Platform P2P"
     case 8005:
         description = "MXI Generation II for z/OS"
     case 8006:
@@ -10087,20 +10081,6 @@ func PortDescription(port uint16) string {
         description = "Rocrail Client Service"
     case 8052:
         description = "Senomix Timesheets Server"
-    case 8053:
-        description = "Senomix Timesheets Client [1 year assignment]"
-    case 8054:
-        description = "Senomix Timesheets Server [1 year assignment]"
-    case 8055:
-        description = "Senomix Timesheets Server [1 year assignment]"
-    case 8056:
-        description = "Senomix Timesheets Server [1 year assignment]"
-    case 8057:
-        description = "Senomix Timesheets Client [1 year assignment]"
-    case 8058:
-        description = "Senomix Timesheets Client [1 year assignment]"
-    case 8059:
-        description = "Senomix Timesheets Client [1 year assignment]"
     case 8060:
         description = "Asymmetric Extended Route Optimization (AERO)"
     case 8061:
@@ -10784,7 +10764,7 @@ func PortDescription(port uint16) string {
     case 9877:
         description = "The X.510 wrapper protocol"
     case 9878:
-        description = "The KX509 Kerberized Certificate Issuance Protocol in Use in 2012"
+        description = "The KX509 Kerberized Certificate Issuance Protocol"
     case 9888:
         description = "CYBORG Systems"
     case 9889:
@@ -10992,9 +10972,9 @@ func PortDescription(port uint16) string {
     case 11108:
         description = "Hardware Terminals Discovery and Low-Level Communication Protocol"
     case 11109:
-        description = "Data migration facility Manager (DMF) is a browser based interface to DMF"
+        description = "Data migration facility Manager"
     case 11110:
-        description = "Data migration facility (DMF) SOAP is a web server protocol to support remote access to DMF"
+        description = "Data migration facility (DMF) SOAP"
     case 11111:
         description = "Viral Computing Environment (VCE)"
     case 11112:
@@ -11106,7 +11086,7 @@ func PortDescription(port uint16) string {
     case 12300:
         description = "LinoGrid Engine"
     case 12302:
-        description = "Remote Administration Daemon (RAD) is a system service that offers secure"
+        description = "Remote Administration Daemon"
     case 12321:
         description = "Warehouse Monitoring Syst SSS"
     case 12322:
@@ -11206,7 +11186,7 @@ func PortDescription(port uint16) string {
     case 15002:
         description = "Open Network Environment TLS"
     case 15118:
-        description = "v2g Supply Equipment Communication Controller Discovery Protocol"
+        description = "v2g Supply Equipment Communication Controller"
     case 15345:
         description = "XPilot Contact Port"
     case 15363:
@@ -11261,8 +11241,6 @@ func PortDescription(port uint16) string {
         description = "Reliable multipath data transport for high latencies"
     case 16666:
         description = "Vidder Tunnel Protocol"
-    case 16789:
-        description = "This server provides callable services to mainframe External Security Managers from any TCP/IP platform"
     case 16900:
         description = "Newbay Mobile Client Update Service"
     case 16950:
@@ -11292,7 +11270,7 @@ func PortDescription(port uint16) string {
     case 17222:
         description = "Control Plane Synchronization Protocol (SPSP)"
     case 17223:
-        description = "ISA100 GCI is a service utilizing a common interface between an ISA100 Wireless gateway and a client application"
+        description = "ISA100 GCI"
     case 17224:
         description = "Train Realtime Data Protocol (TRDP) Process Data"
     case 17225:
@@ -11482,7 +11460,7 @@ func PortDescription(port uint16) string {
     case 22128:
         description = "GSI dCache Access Protocol"
     case 22222:
-        description = "EasyEngine is CLI tool to manage WordPress Sites on Nginx server"
+        description = "EasyEngine"
     case 22273:
         description = "wnn6"
     case 22305:
@@ -11574,7 +11552,7 @@ func PortDescription(port uint16) string {
     case 24577:
         description = "bilobit Service"
     case 24666:
-        description = "Service used by SmarDTV to communicate between a CAM and a second screen application"
+        description = "SmarDTV"
     case 24676:
         description = "Canditv Message Service"
     case 24677:
@@ -11687,8 +11665,6 @@ func PortDescription(port uint16) string {
         description = "VoxelStorm game server"
     case 28240:
         description = "Siemens GSM"
-    case 28589:
-        description = "Building operating system services wide area verified exchange"
     case 29000:
         description = "Siemens Licensing Server"
     case 29118:
@@ -11700,7 +11676,7 @@ func PortDescription(port uint16) string {
     case 29169:
         description = "HNBAP and RUA Common Association"
     case 29999:
-        description = "data exchange protocol for IEC61850 in wind power plants"
+        description = "IEC61850 - wind power plants"
     case 30000:
         description = "Secure Network Data Management Protocol"
     case 30001:
@@ -11904,7 +11880,7 @@ func PortDescription(port uint16) string {
     case 38638:
         description = "Premier SQL Middleware Server"
     case 38865:
-        description = "Security approval process for use of the secRMM SafeCopy program"
+        description = "secRMM SafeCopy"
     case 39063:
         description = "Children's hearing test/Telemedicine"
     case 39681:
@@ -12011,8 +11987,6 @@ func PortDescription(port uint16) string {
         description = "SSRServerMgr"
     case 46336:
         description = "Listen port used for Inedo agent communication"
-    case 46998:
-        description = "Connection between a desktop computer or server and a signature tablet to capture handwritten signatures"
     case 46999:
         description = "MediaBox Server"
     case 47000:
